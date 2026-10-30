@@ -1,62 +1,16 @@
 <!doctype html>
-<html lang="ru" class="is-loading">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Последний синтезатор</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <main class="stage" aria-label="Интерактивный синтезатор">
-    <div class="backdrop" aria-hidden="true"></div>
-    <section class="scene" aria-label="Последний синтезатор">
-      <img class="scene__image" src="content/background.png" alt="Штормовое море за палубой корабля">
-      <img class="piano" src="content/piano.png" alt="Пианино">
-      <div class="instrument drums" data-instrument="drums">
-        <img class="instrument__base drums__base" src="content/drums1.png" alt="">
-        <img class="instrument__active drums__left" src="content/drums2.png" alt="">
-        <img class="instrument__active drums__right" src="content/drums3.png" alt="">
-        <button class="hit hit--cymbal" data-key="Digit7" aria-label="Левый барабан, клавиша 7"></button>
-        <button class="hit hit--drum" data-key="Digit8" aria-label="Правый барабан, клавиша 8"></button>
-      </div>
-      <button class="instrument wheel" data-key="Digit5" aria-label="Штурвал, клавиша 5">
-        <img class="instrument__base" src="content/wheel1.png" alt="">
-        <img class="instrument__active" src="content/wheel2.png" alt="">
-      </button>
-      <div class="control" aria-label="Пульт синтезатора">
-        <img class="control__panel" src="content/control1.png" alt="">
-        <div class="slider" data-key="Digit1" style="--x: 10.191; --rest: 18">
-          <div class="slider__track"></div><img class="slider__thumb" src="content/control2.png" alt="Первый ползунок">
-        </div>
-        <div class="slider" data-key="Digit2" style="--x: 32.484; --rest: 94">
-          <div class="slider__track"></div><img class="slider__thumb" src="content/control2.png" alt="Второй ползунок">
-        </div>
-        <div class="slider" data-key="Digit3" style="--x: 54.777; --rest: 62">
-          <div class="slider__track"></div><img class="slider__thumb" src="content/control2.png" alt="Третий ползунок">
-        </div>
-        <div class="slider" data-key="Digit4" style="--x: 77.07; --rest: 18">
-          <div class="slider__track"></div><img class="slider__thumb" src="content/control2.png" alt="Четвёртый ползунок">
-        </div>
-      </div>
-      <button class="instrument compass" data-key="Digit6" aria-label="Компас, клавиша 6">
-        <img class="instrument__base" src="content/compas1.png" alt="">
-        <img class="instrument__active" src="content/compas2.png" alt="">
-      </button>
-      <button class="instrument violin" data-key="Digit9" aria-label="Скрипка, клавиша 9">
-        <img class="instrument__base" src="content/violin1.png" alt="">
-        <img class="instrument__active" src="content/violin2.png" alt="">
-      </button>
-      <div class="edge-blur edge-blur--top" aria-hidden="true"></div>
-      <div class="edge-blur edge-blur--right" aria-hidden="true"></div>
-      <div class="edge-blur edge-blur--bottom" aria-hidden="true"></div>
-      <div class="edge-blur edge-blur--left" aria-hidden="true"></div>
-    </section>
-    <aside class="rotate-notice" role="status">
-      <div class="rotate-notice__icon" aria-hidden="true">↻</div>
-      <p>Поверните устройство<br>в горизонтальное положение</p>
-    </aside>
-  </main>
-  <script src="content/tone.js"></script>
-  <script src="script.js"></script>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+    <title>lastsynth</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
